@@ -1,4 +1,4 @@
-# Create your own Titanic Teams
+# Superheros!
 
 Your application should have the following behavior:
 
