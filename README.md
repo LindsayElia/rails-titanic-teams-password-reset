@@ -19,22 +19,21 @@ Each Hero should have a/an:
   * bio
   * image_url
 
-The specific models, routing, and views are completely up to you. With that said, this assignment is meant to build on all the things you've been learning up to this point: nested routes, model associations, authentication, etc.
+The specific models, routing, and views are completely up to you. With that said, this assignment is meant to build on all the things you've been learning up to this point: resources, associations, authentication, etc.
 
 ## Getting Started
 
 1. Create a new rails application
-2. Include necessary gems in your Gemfile and run `bundle`
+2. Include necessary gems in your Gemfile and run `bundle` (this includes gems for testing!)
 3. Run rake db:create
 4. Generate your models and migrations
 5. Set up the necessary associations (many to many associations)
 6. Run rake db:migrate
+7. Test Your Models! (write specs that ensure your validations, associations are set up correctly and make sure that instances of your models respond_to everything in your migration!)
 7. Use before_actions for repeated code
 8. Use partials and shared/errors
 9. Style the app
-10. Test Model Associations
-
 
 ## Bonus
 
- * Add a powers resource that has one to many relationship to heroes
+ * Add a powers resource that has many to many relationship to heroes (superman has super_strength, hulk has super_strength etc)
