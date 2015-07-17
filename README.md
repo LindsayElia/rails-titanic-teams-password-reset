@@ -3,17 +3,17 @@
 Your application should have the following behavior:
 
   * Anyone can visit the root page and see a list of all the teams
-  * Anyone can click on a team to view its heroes
+  * Anyone can click on a team to view its superheroes
   * Only a logged in user can create a new team
-  * Only a logged in user can add heroes to a team
+  * Only a logged in user can add superheroes to a team
   * Only the owner/creator of a team can edit/delete that team
-  * Only the owner/creator of a hero can edit/delete that hero
+  * Only the owner/creator of a superhero can edit/delete that superhero
 
 Each Team should have a/an:
   * name (i.e. "Avengers")
   * description
 
-Each Hero should have a/an:
+Each Superhero should have a/an:
   * name
   * height
   * bio
@@ -36,4 +36,4 @@ The specific models, routing, and views are completely up to you. With that said
 
 ## Bonus
 
- * Add a powers resource that has many to many relationship to heroes (superman has super_strength, hulk has super_strength etc)
+ * Add a powers resource that has many to many relationship to superheroes (superman has super_strength, hulk has super_strength etc)
