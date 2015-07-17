@@ -1,13 +1,18 @@
 # Superheros!
 
-Your application should have the following behavior:
+Your application should have the following behavior at a minimum:
 
   * Anyone can visit the root page and see a list of all the teams
   * Anyone can click on a team to view its superheroes
   * Only a logged in user can create a new team
   * Only a logged in user can add superheroes to a team
-  * Only the owner/creator of a team can edit/delete that team
-  * Only the owner/creator of a superhero can edit/delete that superhero
+  * Only an admin can create/update and delete superheroes (think about adding a boolean called is_admin in your users table)
+ 
+Each User should have a/an
+  * username
+  * password
+  * password_digest
+  * is_admin (this should default to false)
 
 Each Team should have a/an:
   * name (i.e. "Avengers")
