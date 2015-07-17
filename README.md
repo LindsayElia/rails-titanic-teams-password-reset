@@ -24,7 +24,9 @@ Each Superhero should have a/an:
   * bio
   * image_url
 
-The specific models, routing, and views are completely up to you. With that said, this assignment is meant to build on all the things you've been learning up to this point: resources, associations, authentication, etc.
+For this assignment - many teams can have many superheroes - this means you need to set up a many to many association. Also, one user can make many teams.
+
+The routing, and views are completely up to you, just remember that the teams resource needs to be nested inside of users. With that said, this assignment is meant to build on all the things you've been learning up to this point: resources, associations, authentication, etc.
 
 ## Getting Started
 
@@ -32,7 +34,7 @@ The specific models, routing, and views are completely up to you. With that said
 2. Include necessary gems in your Gemfile and run `bundle` (this includes gems for testing!)
 3. Run rake db:create
 4. Generate your models and migrations
-5. Set up the necessary associations (many to many associations)
+5. Set up the necessary associations
 6. Run rake db:migrate
 7. Test Your Models! (write specs that ensure your validations, associations are set up correctly and make sure that instances of your models respond_to everything in your migration!)
 7. Use before_actions for repeated code
