@@ -1,46 +1,30 @@
-# Superheros!
+# Homework - Adding Password Reset To Our Applications with Rails
 
-Your application should have the following behavior at a minimum:
+Implement password reset functionality in the weekend assignment. You can start by forking and cloning the solution branch here - [https://github.com/gSchool/rails-titanic-teams](https://github.com/gSchool/rails-titanic-teams)
 
-  * Anyone can visit the root page and see a list of all the teams
-  * Anyone can click on a team to view its superheroes
-  * Only a logged in user can create a new team
-  * Only a logged in user can add superheroes to a team
-  * Only an admin can create/update and delete superheroes (think about adding a boolean called is_admin in your users table)
- 
-Each User should have a/an
-  * username
-  * password
-  * password_digest
-  * is_admin (this should default to false)
+# Getting started:
 
-Each Team should have a/an:
-  * name (i.e. "Avengers")
-  * description
+1. Run rails g rspec:install
+2. Create a feature test (either by generating one or manually creating a features folder and inside a test file)
+3. Install the capybara-email gem
+4. Add `require 'capybara/email/rspec' to your spec_helper
+5. Create a feature test for password reset.
+6. Get the tests to pass!
 
-Each Superhero should have a/an:
-  * name
-  * height
-  * bio
-  * image_url
+# To make your tests pass
 
-For this assignment - many teams can have many superheroes - this means you need to set up a many to many association. Also, one user can make many teams.
+1. Add the necessary columns to your users table
+2. Run your migrations
+3. Add the necessary logic in your user.rb model to generate a token
+4. Generate a mailer and a corresponding view and add the code necessary
+5. Generate a controller to handle the new, create,edit,update actions for password reset
+6. Make sure you have the necessary routes to handle these actions
+7. Write the code necessary in your controllers to make the tests pass!
 
-The routing, and views are completely up to you, just remember that the teams resource needs to be nested inside of users. With that said, this assignment is meant to build on all the things you've been learning up to this point: resources, associations, authentication, etc.
+# Bonus
 
-## Getting Started
+1. Incorporate some additional logic to make sure that tokens expire after a certain amount of time
+2. Configure Mandrill so you can see your emails!
 
-1. Create a new rails application
-2. Include necessary gems in your Gemfile and run `bundle` (this includes gems for testing!)
-3. Run rake db:create
-4. Generate your models and migrations
-5. Set up the necessary associations
-6. Run rake db:migrate
-7. Test Your Models! (write specs that ensure your validations, associations are set up correctly and make sure that instances of your models respond_to everything in your migration!)
-7. Use before_actions for repeated code
-8. Use partials and shared/errors
-9. Style the app
-
-## Bonus
-
- * Add a powers resource that has many to many relationship to superheroes (superman has super_strength, hulk has super_strength etc)
+# Super Bonus
+1. Refactor your code using Rails verifiers. You can see an example here - [https://github.com/gSchool/rails_password_reset_example/tree/verifiers](https://github.com/gSchool/rails_password_reset_example/tree/verifiers)
